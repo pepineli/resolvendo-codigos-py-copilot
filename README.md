@@ -1,8 +1,7 @@
 #  Meus Estudos com Python + GitHub Copilot
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/status-finalizado-brightgreen?style=for-the-badge)
-![Data](https://img.shields.io/badge/data-2026-blue?style=for-the-badge)
+
 
 > Este repositório documenta minha jornada de aprendizado em Python através de 6 desafios práticos. Utilizei o **GitHub Codespaces** como ambiente de desenvolvimento e o **GitHub Copilot** (com auxílio do ChatGPT) como meu copiloto de código.
 
