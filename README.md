@@ -2,14 +2,11 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-
-> Este repositório documenta minha jornada de aprendizado em Python através de 6 desafios práticos. Utilizei o **GitHub Codespaces** como ambiente de desenvolvimento e o **GitHub Copilot** (com auxílio do ChatGPT) como meu copiloto de código.
-
 ---
 
 ##  Sobre o Projeto
 
-Este projeto faz parte do meu portfólio de estudos na **DIO (Digital Innovation One)**. O objetivo foi praticar conceitos fundamentais de Python resolvendo problemas simples, mas essenciais para quem está começando.
+Este projeto faz parte do meu portfólio de estudos na **DIO**. O objetivo foi praticar conceitos fundamentais de Python resolvendo problemas simples, mas essenciais para quem está começando.
 
 **Ferramentas utilizadas:**
 -  Python 3
