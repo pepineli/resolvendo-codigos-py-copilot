@@ -1,85 +1,201 @@
-# Resolvendo Códigos em Python com o Github Copilot
+#  Meus Estudos com Python + GitHub Copilot
 
-Olá!! Aqui veremos algumas resoluções de códigos em python utilizando o Github Copilot.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Status](https://img.shields.io/badge/status-finalizado-brightgreen?style=for-the-badge)
+![Data](https://img.shields.io/badge/data-2026-blue?style=for-the-badge)
 
-### Atenção ⚠️ 
+> Este repositório documenta minha jornada de aprendizado em Python através de 6 desafios práticos. Utilizei o **GitHub Codespaces** como ambiente de desenvolvimento e o **GitHub Copilot** (com auxílio do ChatGPT) como meu copiloto de código.
 
-Não tem acesso ao Github Copilot?! Não tem problema!! 
-Que tal utilizar o [ChatGPT](https://chat.openai.com/) como seu copiloto de estudos ??
+---
 
-## 1 - Concatenando Dados 🐾
+##  Sobre o Projeto
 
-Descrição:
-Vamos receber dois dados diferentes do usuário e concatena-los em uma única string?! 
+Este projeto faz parte do meu portfólio de estudos na **DIO (Digital Innovation One)**. O objetivo foi praticar conceitos fundamentais de Python resolvendo problemas simples, mas essenciais para quem está começando.
 
-O que aprenderemos?
+**Ferramentas utilizadas:**
+-  Python 3
+-  GitHub Codespaces
+-  GitHub Copilot / ChatGPT
+-  Git & GitHub
 
-* Manipulação de Strings (string)
-* Concatenação
-* Entrada de dados
-* Utilização eficiente do Github Copilot
+---
 
-<br>
+##  Métodos e Aprendizados por Desafio
 
-## 2 - Repetindo Textos ✏️
+### 1️⃣ Concatenação de Dados
 
-Descrição:
-Agora vamos solicitar uma string e um número inteiro como entrada. Depois teremos que retornar a string repetida o número de vezes informado. 
+**Como fiz:**  
+Criei um script que recebe duas entradas do usuário e as une em uma única string.
 
-O que aprenderemos?
+**Métodos utilizados:**
+- `input()` para capturar dados
+- Operador `+` para concatenar strings
+- Separação com espaço entre as informações
 
-* Manipulação de Strings (string)
-* Números Inteiros (int)
-* Múltiplas repetições
-* Entrada de dados
-* Aproveitar as sugestões do Github Copilot
+```python
+info1 = input("Digite a primeira informação: ")
+info2 = input("Digite a segunda informação: ")
+info_concatenada = info1 + " " + info2
+print("As informações concatenadas são:", info_concatenada)
+```
 
-<br>
+---
 
-## 3 - Operações Matemáticas Simples 📐
+### 2️⃣ Repetição de Textos
 
-Descrição:
-Vamos solicitar como entrada dois números e depois vamos realizar uma operação simples entre eles.
+**Como fiz:**  
+Recebi uma string e um número inteiro. Usei a multiplicação de strings para repetir o texto.
 
-O que aprenderemos?
+**Métodos utilizados:**
+- `int()` para converter string em número
+- Operador `*` para multiplicar strings
 
-* Operações Matemáticas Básicas
-* Entrada de dados
-* Utilização eficiente do Github Copilot
+```python
+string = input("Digite uma string: ")
+numero = int(input("Digite um número inteiro: "))
+print(string * numero)
+```
 
-<br>
+---
 
-## 4 - Verificando Números Pares e Ímpares 🧮
+### 3️⃣ Operações Matemáticas
 
-Descrição: Como entrada, receba um número inteiro e verifique se ele é par ou ímpar. 
-Uma dica é: Utilize condicionais para realizar a verificação e, se possível, faça uso do Github Copilot(ou outra IA) para otimizar a estrutura do código.
+**Como fiz:**  
+Recebi dois números e uma operação (+, -, *, /) e utilizei condicionais para executar a conta correta.
 
-O que aprenderemos?
-* Utilização de condicionais em Python (if, else) para realizar verificações.
-* Introdução ao conceito de operador de módulo (%) para verificar se um número é par ou ímpar.
-* Exploração do uso de uma ferramenta de IA, como o Github Copilot, para otimizar a estrutura do código.
+**Métodos utilizados:**
+- `float()` para aceitar números decimais
+- Estrutura `if/elif/else` para escolher a operação
+- Validação de divisão por zero
+
+```python
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+operacao = input("Digite a operação (+, -, *, /): ")
+
+if operacao == '+':
+    print(num1 + num2)
+elif operacao == '-':
+    print(num1 - num2)
+elif operacao == '*':
+    print(num1 * num2)
+elif operacao == '/':
+    if num2 != 0:
+        print(num1 / num2)
+    else:
+        print("Erro: Divisão por zero!")
+else:
+    print("Operação inválida!")
+```
+
+---
+
+### 4️⃣ Par ou Ímpar
+
+**Como fiz:**  
+Recebi um número inteiro e usei o operador de módulo (`%`) para verificar o resto da divisão por 2.
+
+**Métodos utilizados:**
+- Operador módulo `%`
+- Estrutura condicional `if/else`
+
+```python
+numero = int(input("Digite um número inteiro: "))
+
+if numero % 2 == 0:
+    print(f"O número {numero} é PAR!")
+else:
+    print(f"O número {numero} é ÍMPAR!")
+```
+
+---
+
+### 5️⃣ Média de Notas
+
+**Como fiz:**  
+Recebi três notas, somei todos os valores e dividi por 3. Adicionei uma validação para mostrar se o aluno foi aprovado ou não.
+
+**Métodos utilizados:**
+- Conversão com `float()` para notas decimais
+- Cálculo aritmético `(n1 + n2 + n3) / 3`
+- Formatação com `f-string` e `:.2f` para 2 casas decimais
+
+```python
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+nota3 = float(input("Digite a terceira nota: "))
+
+media = (nota1 + nota2 + nota3) / 3
+
+print(f"A média das notas é: {media:.2f}")
+
+if media >= 7:
+    print("Aluno APROVADO!")
+elif media >= 5:
+    print("Aluno em RECUPERAÇÃO!")
+else:
+    print("Aluno REPROVADO!")
+```
+
+---
+
+### 6️⃣ Palíndromo
+
+**Como fiz:**  
+Recebi uma palavra ou frase, removi espaços, converti para minúsculas e comparei com a versão invertida.
+
+**Métodos utilizados:**
+- `.replace(" ", "")` para remover espaços
+- `.lower()` para padronizar maiúsculas/minúsculas
+- `[::-1]` para inverter a string (fatiamento com passo negativo)
+
+```python
+palavra = input("Digite uma palavra: ")
+
+palavra_limpa = palavra.replace(" ", "").lower()
+palavra_invertida = palavra_limpa[::-1]
+
+if palavra_limpa == palavra_invertida:
+    print(f'"{palavra}" é um PALÍNDROMO!')
+else:
+    print(f'"{palavra}" NÃO é um palíndromo.')
+```
+
+---
+
+##  Estrutura do Projeto
+
+```
+resolvendo-codigos-py-copilot/
+├── resolucoes_code/
+│   ├── concat_dados.py    # Desafio 1 - Concatenação
+│   ├── repet_txt.py       # Desafio 2 - Repetição
+│   ├── ope_mat.py         # Desafio 3 - Operações matemáticas
+│   ├── par_impar.py       # Desafio 4 - Par ou ímpar
+│   ├── media_notas.py     # Desafio 5 - Média de notas
+│   └── palindromo.py      # Desafio 6 - Palíndromo
+└── README.md
+```
+
+---
+
+##  O que eu aprendi com este projeto
+
+- Manipular strings com concatenação, repetição e inversão
+- Trabalhar com números inteiros e decimais
+- Usar condicionais (`if`, `elif`, `else`) para controle de fluxo
+- Aplicar o operador módulo (`%`) para verificar paridade
+- Calcular média e classificar resultados
+- Inverter strings usando fatiamento (`[::-1]`)
+- Versionar código com Git no GitHub Codespaces
+
+---
 
 
-<br>
+## 📝 Licença
 
-## 5 - Calculando Média de Notas 📚
+Este projeto é de uso livre para estudos. Fique à vontade para clonar, modificar e compartilhar!
 
-Descrição: Agora vamos calcular a média de três notas fornecidas na entrada do usuário. 
-Uma dica é: Utilize operadores aritméticos para realizar o cálculo da média.
+---
 
-O que aprenderemos?
-* Uso de variáveis para armazenar dados fornecidos pelo usuário.
-* Aplicação de operadores aritméticos (+, /) para calcular a média de um conjunto de valores.
-* Prática na solicitação e manipulação de entrada do usuário.
-
-<br>
-
-## 6 - Verificando Palíndromos 🔄
-
-Descrição: Vamos testar se uma palavra é um palíndromo?! 
-Uma dica é: Utilize conceitos de manipulação de strings para inverter a palavra e comparar com a original.
-
-O que aprenderemos?
-* Manipulação de strings em Python, especialmente invertendo uma string.
-* Compreensão de como comparar a string original com sua versão invertida para determinar se é um palíndromo.
-* Introdução ao conceito de palíndromos e sua aplicação em problemas de programação.
+**⭐ Se gostou deste conteúdo, deixe uma estrela no repositório!**
