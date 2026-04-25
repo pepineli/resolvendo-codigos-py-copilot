@@ -175,23 +175,5 @@ resolvendo-codigos-py-copilot/
 
 ---
 
-##  O que eu aprendi com este projeto
-
-- Manipular strings com concatenação, repetição e inversão
-- Trabalhar com números inteiros e decimais
-- Usar condicionais (`if`, `elif`, `else`) para controle de fluxo
-- Aplicar o operador módulo (`%`) para verificar paridade
-- Calcular média e classificar resultados
-- Inverter strings usando fatiamento (`[::-1]`)
-- Versionar código com Git no GitHub Codespaces
-
----
-
-
-## 📝 Licença
-
-Este projeto é de uso livre para estudos. Fique à vontade para clonar, modificar e compartilhar!
-
----
 
 **⭐ Se gostou deste conteúdo, deixe uma estrela no repositório!**
