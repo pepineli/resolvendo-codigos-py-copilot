@@ -174,6 +174,3 @@ resolvendo-codigos-py-copilot/
 ```
 
 ---
-
-
-**⭐ Se gostou deste conteúdo, deixe uma estrela no repositório!**
